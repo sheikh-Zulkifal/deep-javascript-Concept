@@ -28,7 +28,7 @@
 // console.log(typeof(v)); // bigint in future
 
 // 1. Undeclared
-// A variable is considered undeclared if it has not been declared in the current scope using var, let, or const. 
+// A variable is considered undeclared if it has not been declared in the current scope using var, let, or const.
 // Attempting to access an undeclared variable will result in a ReferenceError.
 // example console.log(x); // ReferenceError: x is not defined
 // In this case, x was never declared, so JavaScript cannot find it and throws an error.
@@ -40,9 +40,42 @@
 
 // EXAMPLE IN FUNCTION
 // function testFunc() {
- // let z;
-  //console.log(z); // Output: undefined
+// let z;
+//console.log(z); // Output: undefined
 //}
 // testFunc();
 
+// SPECIAL VALUES IN JAVASCRIPT
 
+// 1. NAN
+
+// NaN is a property of the global object. In other words, it is a variable in global scope.
+// NAN is not equal to anything including itself. the type of the NaN is number but its just a invalid number.
+
+// var x = Number("Hello World");
+// var y = Number("Hello World");
+// var z = 10;
+
+//  console.log(z-x); // NaN
+// console.log(x === y); // false because NaN is not equal to anything including itself
+// console.log(x); // NaN
+// console.log(isNaN(x)); // true
+// console.log(Number.isNaN(y)); // true
+
+// 2. NEGATIVE ZERO
+
+// Negative zero is a number in JavaScript that is the same as zero but has a sign opposite to zero.
+// In other words, negative zero is the same as zero but with a negative sign.
+
+//var x = 0;
+
+// console.log(x === -0); // true
+// x.toString(); // "0"
+// console.log(x === 0); // true
+// console.log(x > 0); // false
+// console.log(x < 0); // false
+
+
+
+
+ 
